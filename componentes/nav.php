@@ -5,9 +5,9 @@
                 <!-- Logo y nombre -->
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10   flex items-center justify-center">
-                        <img src="./assets/Logo.jpg" alt="Logo Face & Grace"class="w-10 h-10 rounded-full object-cover">
+                       <a href="./index.php"> <img src="./assets/Logo.jpg" alt="Logo Face & Grace"class="w-10 h-10 rounded-full object-cover"></a>
                     </div>
-                    <span class="text-2xl font-semibold text-white">Face & Grace</span>
+                    <a href="./index.php"><span class="text-2xl font-semibold text-white">Face & Grace</span></a>
                 </div>
                 
                 <!-- Desktop Menu -->

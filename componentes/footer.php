@@ -11,9 +11,7 @@
                 <div class="text-center md:text-left">
                     <div class="flex items-center justify-center md:justify-start mb-4">
                         <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center mr-3">
-                            <svg class="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"/>
-                            </svg>
+                            <img src="./assets/Logo.jpg" alt="Logo Face & Grace" class="w-10 h-10 rounded-full object-cover">
                         </div>
                         <span class="text-2xl font-semibold">Face & Grace</span>
                     </div>
@@ -38,7 +36,7 @@
                 <div class="text-center md:text-right">
                     <h4 class="text-lg font-semibold mb-4">Ubicación</h4>
                     <p class="text-gray-400 flex items-center justify-center md:justify-end">
-                        <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                         </svg>
                         Santiago, Carretera La Ceibita de Pekin
@@ -47,7 +45,7 @@
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-500">&copy; 2025 Face & Grace. Todos los derechos reservados.</p>
+                <p class="text-gray-500">&copy; 2025 Face & Grace. Todos los derechos reservados por JEM.</p>
             </div>
         </div>
     </footer>

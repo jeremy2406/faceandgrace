@@ -36,16 +36,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
-         <img src="./assets/Limpiador.jpeg" alt="Limpiador Facial" class="w-20 h-20 text-white">
+         <img src="./assets/Limpiador.png" alt="Limpiador Facial" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Limpiador Facial</h3>
           <p class="text-gray-400 mb-4">Limpieza profunda y suave para todo tipo de piel</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$45</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$14</span>
+            
           </div>
         </div>
       </div>
@@ -54,16 +52,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-          <img src="./assets/Serum.jpg" alt="Serum Hidratante" class="w-20 h-20 text-white">
+          <img src="./assets/Serum.png" alt="Serum Hidratante" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Serum Hidratante</h3>
           <p class="text-gray-400 mb-4">Hidratación intensa con ácido hialurónico</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$65</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$28</span>
+            
           </div>
         </div>
       </div>
@@ -72,16 +68,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
-          <img src="./assets/Antiedad.jpeg" alt="Crema Antiedad" class="w-20 h-20 text-white">
+          <img src="./assets/Antiedad.png" alt="Crema Antiedad" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Crema Antiedad</h3>
           <p class="text-gray-400 mb-4">Reduce líneas de expresión y arrugas</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$85</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$16</span>
+            
           </div>
         </div>
       </div>
@@ -90,16 +84,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-pink-600 to-pink-800 flex items-center justify-center">
-          <img src="./assets/Mascarilla.jpeg" alt="Mascarilla Purificante" class="w-20 h-20 text-white">
+          <img src="./assets/Mascarilla.png" alt="Mascarilla Purificante" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Mascarilla Purificante</h3>
           <p class="text-gray-400 mb-4">Limpieza profunda y purificación de poros</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$35</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$45</span>
+           
           </div>
         </div>
       </div>
@@ -108,16 +100,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-yellow-600 to-yellow-800 flex items-center justify-center">
-         <img src="./assets/Nivea.jpeg" alt="Protector Solar" class="w-20 h-20 text-white">
+         <img src="./assets/Nivea.png" alt="Protector Solar" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Protector Solar</h3>
           <p class="text-gray-400 mb-4">Protección UV con factor 50+</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$55</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$25</span>
+            
           </div>
         </div>
       </div>
@@ -126,16 +116,14 @@
       <div
         class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
         <div class="h-64 bg-gradient-to-br from-indigo-600 to-indigo-800 flex items-center justify-center">
-         <img src="./assets/Tonico.jpeg" alt="Tónico Facial" class="w-20 h-20 text-white">
+         <img src="./assets/Tonico.png" alt="Tónico Facial" class="w-40 h-40 text-white">
         </div>
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Tónico Facial</h3>
           <p class="text-gray-400 mb-4">Equilibra y prepara la piel</p>
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-green-400">$40</span>
-            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
-              Ver más
-            </button>
+            <span class="text-2xl font-bold text-green-400">$66</span>
+           
           </div>
         </div>
       </div>
