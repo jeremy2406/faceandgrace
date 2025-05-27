@@ -1,5 +1,5 @@
-<?php include 'Componentes/Header.php'; ?>
-<?php include 'Componentes/Nav.php'; ?>
+<?php include 'componentes/header.php'; ?>
+<?php include 'componentes/nav.php'; ?>
 
 <div class="container mx-auto p-20">
   <div class="flex justify-between items-center mb-6">
@@ -220,4 +220,4 @@ document.addEventListener('DOMContentLoaded', () => {
   cargarAsistencias();
 });
 </script>
-<?php include 'Componentes/Footer.php'; ?>
+<?php include 'componentes/footer.php'; ?>

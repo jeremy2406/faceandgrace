@@ -1,5 +1,5 @@
-<?php include 'Componentes/Header.php'; ?>
-<?php include 'Componentes/Nav.php'; ?>
+<?php include 'componentes/header.php'; ?>
+<?php include 'componentes/nav.php'; ?>
 <div class="container mx-auto px-4 py-20 text-center">
   <h2 class="text-3xl font-bold mb-4">Escanea tu código QR</h2>
   <p class="mb-6">Utiliza la cámara para escanear tu código QR único y registrar tu asistencia.</p>
