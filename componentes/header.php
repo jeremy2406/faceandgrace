@@ -1,26 +1,19 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chibi's House - Best for Your Pet</title>
+    <title>Face & Grace - Skincare</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'warm-brown': '#8B4513',
-                        'light-brown': '#D2B48C',
-                        'cream': '#F5F5DC',
-                        'soft-brown': '#DEB887'
-                    },
-                    fontFamily: {
-                        'nunito': ['Nunito', 'sans-serif']
-                    }
-                }
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito', sans-serif; }
+        .logo-img { 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%;
+            object-fit: cover;
         }
-    </script>
+    </style>
 </head>
-<body class="font-nunito bg-cream text-gray-800">
+<body class="bg-gray-900 text-white">

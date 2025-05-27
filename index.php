@@ -2,281 +2,243 @@
 <?php include 'Componentes/Nav.php'; ?>
 
 <!-- Hero Section -->
-<section class="pt-16 bg-gradient-to-br from-cream to-soft-brown min-h-screen flex items-center">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <div class="text-center">
-      <div class="mb-8">
-        <div class="inline-flex items-center space-x-4 mb-6">
-          <div class="w-16 h-16 bg-orange-400 rounded-full flex items-center justify-center">
-            <span class="text-2xl">🐕</span>
-          </div>
-          <div class="w-16 h-16 bg-gray-400 rounded-full flex items-center justify-center">
-            <span class="text-2xl">🐶</span>
-          </div>
-          <div class="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
-            <span class="text-2xl">🐩</span>
-          </div>
-        </div>
-      </div>
-      <h1 class="text-5xl md:text-7xl font-bold text-warm-brown mb-4">Chibi's House</h1>
-      <p class="text-xl md:text-2xl text-gray-700 mb-8 font-medium">BEST FOR YOUR PET</p>
-      <p class="text-lg text-gray-600 mb-8">📞 849-234-3465</p>
-      <p class="text-base text-gray-600">BELLA VISTA, SANTIAGO DE LOS CABALLEROS</p>
+<section id="inicio"
+  class="pt-20 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-green-900">
+  <div class="text-center max-w-4xl mx-auto px-4">
+    <div class="w-32 h-32  rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+      <img src="./assets/Logo.jpg" alt="Logo Face & Grace"class="w-32 h-32 rounded-full object-cover">
     </div>
+    <h1
+      class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent">
+      Face & Grace
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-300 mb-4 font-light">SKINCARE</p>
+    <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+      Transforma tu rostro, resalta tu esencia
+    </p>
+    <p class="text-md text-gray-500">Santiago, Carretera La Ceibita de Pekin</p>
   </div>
 </section>
 
-<!-- Gallery Section -->
-<section id="gallery" class="py-20 bg-white">
+<!-- Galería de Productos -->
+<section id="galeria" class="py-20 bg-gray-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-warm-brown mb-4">Galería de Perritos</h2>
-      <p class="text-xl text-gray-600">Nuestros adorables compañeros de cuatro patas</p>
+      <h2 class="text-4xl font-bold mb-4">Nuestros Productos</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        Descubre nuestra línea completa de productos para el cuidado facial, diseñados para transformar y resaltar la
+        belleza natural de tu piel.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Gallery Items -->
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-          <img src="./assets/Golden.png" alt="Perro Golden Retriever" class="h-48 object-contain mx-auto">
+      <!-- Producto 1 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+         <img src="./assets/Limpiador.jpeg" alt="Limpiador Facial" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Golden Retriever</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Limpiador Facial</h3>
+          <p class="text-gray-400 mb-4">Limpieza profunda y suave para todo tipo de piel</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$45</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-amber-200 to-amber-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-          <img src="./assets/Poodle.png" alt="Perro Poodle" class="h-60 object-contain mx-auto">
+      <!-- Producto 2 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+          <img src="./assets/Serum.jpg" alt="Serum Hidratante" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Poodle</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Serum Hidratante</h3>
+          <p class="text-gray-400 mb-4">Hidratación intensa con ácido hialurónico</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$65</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-          <img src="./assets/Labrador.png" alt="Perro Labrador" class="h-60 object-contain mx-auto">
+      <!-- Producto 3 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+          <img src="./assets/Antiedad.jpeg" alt="Crema Antiedad" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Labrador</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Crema Antiedad</h3>
+          <p class="text-gray-400 mb-4">Reduce líneas de expresión y arrugas</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$85</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-red-200 to-red-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-         <img src="./assets/Pastor.png" alt="Perro Pastor Alemán" class="h-48 object-contain mx-auto">
+      <!-- Producto 4 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-pink-600 to-pink-800 flex items-center justify-center">
+          <img src="./assets/Mascarilla.jpeg" alt="Mascarilla Purificante" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Pastor Alemán</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Mascarilla Purificante</h3>
+          <p class="text-gray-400 mb-4">Limpieza profunda y purificación de poros</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$35</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-purple-200 to-purple-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-          <img src="./assets/Buldog.png" alt="Perro Bulldog" class="h-60 object-contain mx-auto">
+      <!-- Producto 5 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-yellow-600 to-yellow-800 flex items-center justify-center">
+         <img src="./assets/Nivea.jpeg" alt="Protector Solar" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Bulldog</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Protector Solar</h3>
+          <p class="text-gray-400 mb-4">Protección UV con factor 50+</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$55</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="group cursor-pointer">
-        <div
-          class="bg-gradient-to-br from-green-200 to-green-300 rounded-2xl p-8 h-64 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-          <img src="./assets/Chiuahua.png" alt="Perro Chihuahua" class="h-48 object-contain mx-auto">
+      <!-- Producto 6 -->
+      <div
+        class="bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="h-64 bg-gradient-to-br from-indigo-600 to-indigo-800 flex items-center justify-center">
+         <img src="./assets/Tonico.jpeg" alt="Tónico Facial" class="w-20 h-20 text-white">
         </div>
-        <p class="text-center mt-4 font-semibold text-gray-700">Chihuahua</p>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Tónico Facial</h3>
+          <p class="text-gray-400 mb-4">Equilibra y prepara la piel</p>
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-bold text-green-400">$40</span>
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+              Ver más
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Company Section -->
-<section id="company" class="py-20 bg-cream">
+<!-- Nossa Empresa -->
+<section id="empresa" class="py-20 bg-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-warm-brown mb-4">Nuestra Empresa</h2>
-      <p class="text-xl text-gray-600">Conoce más sobre Chibi's House</p>
+      <h2 class="text-4xl font-bold mb-4">Nuestra Empresa</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        Conoce más sobre Face & Grace y nuestro compromiso con tu belleza natural
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <!-- Misión -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-750 transition-colors duration-300">
         <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-              </path>
+          <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-warm-brown">Misión</h3>
+          <h3 class="text-2xl font-semibold">Misión</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">Brindar atención personalizada,
-          profesional y amorosa a las
-          mascotas directamente en la
-          comodidad
-          de
-          su
-          hogar,
-          asegurando su bienestar, felicidad y
-          tranquilidad para sus dueños,
-          mediante un servicio confiable,
-          rápido y adaptado a cada necesidad.</p>
+        <p class="text-gray-300 leading-relaxed">
+          En Face & Grace nos enfocamos en brindar bienestar y confianza a través de productos naturales para el cuidado
+          de la piel. Nuestro objetivo es ofrecer soluciones efectivas y saludables que respeten tanto el cuerpo como el
+          medio ambiente. Creemos que la belleza comienza con el autocuidado, por eso desarrollamos productos seguros,
+          honestos y pensados para realzar la belleza natural de cada persona, promoviendo al mismo tiempo una conexión
+          consciente con lo natural.
+
+        </p>
       </div>
 
       <!-- Visión -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-750 transition-colors duration-300">
         <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
-              </path>
+          <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-warm-brown">Visión</h3>
+          <h3 class="text-2xl font-semibold">Visión</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">Ser la empresa líder en servicios de
-          cuidado de mascotas a domicilio en
-          el país, reconocida por la calidad,
-          calidez y compromiso con el
-          bienestar
-          animal,
-          continuamente
-          para
-          innovando
-          ofrecer
-          experiencias excepcionales tanto a
-          las mascotas como a sus familias.</p>
+        <p class="text-gray-300 leading-relaxed">
+          Aspiramos a posicionarnos como una empresa líder en el mercado del cuidado de la piel natural, reconocida por
+          su compromiso con la calidad, la innovación y el respeto por el medio ambiente. En Face & Grace soñamos con
+          transformar las rutinas de cuidado personal en experiencias saludables, responsables y sostenibles,
+          construyendo una comunidad que valore la belleza real y el bienestar integral.
+
+        </p>
       </div>
 
       <!-- Valores -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-750 transition-colors duration-300">
         <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-              </path>
+          <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-warm-brown">Valores</h3>
+          <h3 class="text-2xl font-semibold">Valores</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed"> Amor por los animales,
-          confianza,
-          compromiso,
-          empatía,
-          innovación y
-          transparencia.</p>
+        <p class="text-gray-300 leading-relaxed">
+          Naturalidad: Priorizamos el uso de ingredientes naturales y seguros para la piel. <br>
+          Responsabilidad ambiental: Nos comprometemos con prácticas sostenibles y respetuosas con el entorno.<br>
+          Calidad: Garantizamos productos efectivos y elaborados con altos estándares.<br>
+          Confianza: Fomentamos relaciones transparentes y honestas con nuestros clientes.<br>
+          Innovación: Buscamos constantemente mejorar y desarrollar nuevas soluciones para el cuidado de la piel.<br>
+          Bienestar: Promovemos el autocuidado como parte esencial de una vida saludable.
+
+        </p>
       </div>
 
-      <!-- Sobre nosotros -->
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <!-- Sobre Nosotros -->
+      <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-750 transition-colors duration-300">
         <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-              </path>
+          <div class="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.95 1.95 0 0 0 18.1 7H5.9c-.8 0-1.54.5-1.86 1.27L1.5 16H4v6h16z" />
             </svg>
           </div>
-          <h3 class="text-2xl font-bold text-warm-brown">Sobre Nosotros</h3>
+          <h3 class="text-2xl font-semibold">Sobre Nosotros</h3>
         </div>
-        <p class="text-gray-600 leading-relaxed">Chibi's House es más que una
-          tienda de mascotas, es una
-          comunidad dedicada a ofrecer lo
-          mejor para tus animales. Inspirados
-          en lo "chibi" (pequeño y adorable),
-          priorizamos calidad, cuidado y
-          alegría. Ofrecemos asesoramiento
-          personalizado y celebramos la
-          individualidad de cada animal.</p>
+        <p class="text-gray-300 leading-relaxed">
+          Face & Grace Skincare es una empresa dedicada al cuidado de la piel a través de productos naturales,
+          formulados con ingredientes de alta calidad que respetan la salud, la belleza y el equilibrio del rostro.
+          Creemos en una cosmética consciente, elegante y efectiva, que transforma no solo la piel, sino también la
+          relación de cada persona con su propia esencia.
+          Nuestra pasión es ofrecer bienestar, confianza y resultados reales a través de una línea de productos que
+          fusiona la naturaleza con el cuidado profesional. En Face & Grace, trabajamos cada día para resaltar lo mejor
+          de ti: tu belleza auténtica.
+        </p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Company Structure Section -->
-<section id="structure" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-warm-brown mb-4">Estructura de la Empresa</h2>
-      <p class="text-xl text-gray-600">Organización y jerarquía de Chibi's House</p>
-    </div>
-
-    <!-- Organization Chart -->
-    <div class="max-w-6xl mx-auto">
-      <!-- Director Ejecutivo -->
-      <div class="flex justify-center mb-8">
-        <div class="bg-gradient-to-br from-warm-brown to-amber-800 text-white rounded-xl p-6 shadow-lg">
-          <h3 class="text-xl font-bold text-center">Director Ejecutivo</h3>
-        </div>
-      </div>
-
-      <!-- Level 1 -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-        <div class="bg-soft-brown text-gray-800 rounded-xl p-4 shadow-lg text-center">
-          <h4 class="font-semibold">Directora de Recursos Humanos</h4>
-        </div>
-        <div class="bg-soft-brown text-gray-800 rounded-xl p-4 shadow-lg text-center">
-          <h4 class="font-semibold">Departamento Financiero</h4>
-        </div>
-        <div class="bg-soft-brown text-gray-800 rounded-xl p-4 shadow-lg text-center">
-          <h4 class="font-semibold">Gerente de Administración</h4>
-        </div>
-        <div class="bg-soft-brown text-gray-800 rounded-xl p-4 shadow-lg text-center">
-          <h4 class="font-semibold">Departamento de Servicio al Cliente</h4>
-        </div>
-      </div>
-
-      <!-- Level 2 -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-        <div class="bg-light-brown text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Auxiliar de Recursos Humanos</h5>
-        </div>
-        <div class="bg-light-brown text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Contabilidad</h5>
-        </div>
-        <div class="bg-light-brown text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Encargada de Gestión Documental</h5>
-        </div>
-        <div class="bg-light-brown text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Ventas</h5>
-        </div>
-      </div>
-
-      <!-- Level 3 -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-
-        <h5 class="text-sm font-medium"></h5>
-
-        <div class="bg-amber-100 text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Tesorería</h5>
-        </div>
-        <div class="bg-amber-100 text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Consejería</h5>
-        </div>
-        <div class="bg-amber-100 text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Marketing</h5>
-        </div>
-      </div>
-      <!-- Level 4 -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-
-        <h5 class="text-sm font-medium"></h5>
-
-        <div class="bg-amber-100 text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Compras</h5>
-        </div>
-
-        <h5 class="text-sm font-medium"></h5>
-
-        <div class="bg-amber-100 text-gray-800 rounded-lg p-3 shadow text-center">
-          <h5 class="text-sm font-medium">Departamento de Caja</h5>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 
 <?php include 'Componentes/Footer.php'; ?>
