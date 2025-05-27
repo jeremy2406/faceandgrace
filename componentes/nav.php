@@ -15,7 +15,7 @@
                     <a href="./index.php" class="text-gray-300 hover:text-white transition-colors duration-200">Inicio</a>
                     <a href="./escanear.php" class="text-gray-300 hover:text-white transition-colors duration-200">Escanear</a>
                     <a href="./lista.php" class="text-gray-300 hover:text-white transition-colors duration-200">Lista</a>
-                    <a href="./generador_qr.php" class="text-gray-300 hover:text-white transition-colors duration-200">Genear</a>
+                    <a href="./generador_qr.php" class="text-gray-300 hover:text-white transition-colors duration-200">Generar</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
