@@ -1,0 +1,119 @@
+RewriteEngine On
+
+# Configuración básica
+DirectoryIndex index.php index.html
+Options -Indexes +FollowSymLinks
+
+# Headers de seguridad (solo si mod_headers está disponible)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options SAMEORIGIN
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Configuración CORS más permisiva para desarrollo
+    <FilesMatch "\.(php)$">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE"
+        Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+        Header set Access-Control-Max-Age "86400"
+    </FilesMatch>
+</IfModule>
+
+# Manejar preflight requests correctamente
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+# Configuración de tipos MIME
+AddType application/json .json
+AddType text/javascript .js
+AddType text/css .css
+
+# Configuración PHP básica
+<IfModule mod_php.c>
+    # Desactivar display_errors para evitar que interfiera con JSON
+    php_value display_errors Off
+    php_value error_reporting E_ALL
+    php_value log_errors On
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_value memory_limit 256M
+    # Configuración de buffer de salida
+    php_value output_buffering On
+    php_value implicit_flush Off
+</IfModule>
+
+# Proteger archivos sensibles
+<Files "composer.json">
+    Require all denied
+</Files>
+
+<Files "composer.lock">
+    Require all denied
+</Files>
+
+<Files ".env">
+    Require all denied
+</Files>
+
+<Files "*.log">
+    Require all denied
+</Files>
+
+# Compresión GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Cache control
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType application/json "access plus 1 hour"
+</IfModule>
+
+# Reescritura de URLs para manejo de errores
+ErrorDocument 404 /404.php
+ErrorDocument 500 /error.php
+
+# API Routes mejoradas - Redirigir solicitudes de API al config.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/test/?$ php/config.php?action=test [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/registrar_asistencia/?$ php/config.php?action=registrar_asistencia [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/obtener_asistencias/?$ php/config.php?action=obtener_asistencias [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/obtener_usuarios/?$ php/config.php?action=obtener_usuarios [QSA,L]
+
+# Fallback para otras rutas de API
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ php/config.php [QSA,L]
+
+# Configuración para debug (remover en producción)
+RewriteCond %{QUERY_STRING} debug=1
+RewriteRule ^(.*)$ - [E=REMOTE_USER:%{QUERY_STRING}]

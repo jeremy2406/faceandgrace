@@ -1,0 +1,11 @@
+{
+    "name": "sistema/asistencia-qr",
+    "description": "Sistema de Asistencia por Código QR con Supabase",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
