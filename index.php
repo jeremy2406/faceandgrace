@@ -1,5 +1,5 @@
-<?php include 'Componentes/Header.php'; ?>
-<?php include 'Componentes/Nav.php'; ?>
+<?php include 'componentes/header.php'; ?>
+<?php include 'componentes/nav.php'; ?>
 
 <!-- Hero Section -->
 <section id="inicio"
@@ -229,4 +229,4 @@
   </div>
 </section>
 
-<?php include 'Componentes/Footer.php'; ?>
+<?php include 'componentes/footer.php'; ?>
